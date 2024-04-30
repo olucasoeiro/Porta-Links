@@ -5,7 +5,7 @@
   }
   :root {
     --bg-url: url(./assets/background-mobile-dark.png);
-    --bg-container: rgba(39, 39, 39, 0.9);
+    --bg-container: rgba(39, 39, 39, 1);
     --text-color: white;
     --bg-links: rgba(255, 255, 255, 0.1);
     --bg-links-border: rgba(255, 255, 255, 0.25);
@@ -16,7 +16,7 @@
   
   .light {
     --bg-url: url(./assets/background-mobile-light.png);
-    --bg-container: rgba(255, 255, 255, 0.5);
+    --bg-container: rgba(255, 255, 255, 1);
     --text-color: rgba(0, 0, 0, 1);
     --bg-links: rgba(0, 0, 0, 0.1);
     --bg-links-border: rgba(0, 0, 0, 0.25);
@@ -35,7 +35,8 @@
   }
   
   #container {
-    width: 360px;
+    width: 100%;
+    max-width: 320px;
     margin: 56px auto 0px;
     padding: 0 24px;
     background-color: var(--bg-container);
@@ -50,6 +51,7 @@
   
   #profile img {
     width: 112px;
+    border-radius: 50%;
   }
   
   #profile p {
