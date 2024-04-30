@@ -31,12 +31,13 @@
   }
   
   body {
-    background: var(--bg-url) no-repeat;
+    background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
   }
   
   #container {
     width: 100%;
-    max-width: 320px;
+    max-width: 374px;
     margin: 56px auto 0px;
     padding: 0 24px;
     background-color: var(--bg-container);
@@ -167,3 +168,19 @@
     font-size: 14px;
   }
   
+  /* media queries */
+
+  @media (min-width: 700px) {
+    :root {
+      --bg-url: url(./assets/background-desktop-dark.png);
+    }
+
+    .light {
+      --bg-url: url(./assets/background-desktop-light.png);
+    }
+
+    #container {
+    width: 100%;
+    max-width: 588px;
+  }
+  }
